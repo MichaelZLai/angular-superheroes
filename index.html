@@ -9,13 +9,22 @@
 <body ng-controller="superCtrl as vm">
 
   <div class="searchForm">
-    <label>Search For a Superhero
-      <input type="text" ng-model="searchBox">
+    <label>Search Page
+      <input type="text" ng-model="searchBox.$">
+    </label>
+    <label>Search by Superhero
+      <input type="text" ng-model="searchBox.name">
+    </label>
+    <label>Search by Phone Number
+      <input type="text" ng-model="searchBox.phoneNum">
+    </label>
+    <label>Search by Affiliation
+      <input type="text" ng-model="searchBox.affiliation">
     </label>
   </div>
 
   <div class="superherobox" ng-repeat="superhero in vm.superheroes | filter:searchBox">
-    <h2>{{superhero.name}}</h2>
+    <h2 ng-class="{'blue':superhero.affiliation === 'Marvel','red':superhero.affiliation === 'DC'}">{{superhero.name}}</h2>
     <img ng-src="{{superhero.img_url}}" alt="superhero image" />
     <p>Affiliation: {{superhero.affiliation}} </p>
     <p>Phone Number: {{superhero.phoneNum}}</p>

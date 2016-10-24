@@ -10,7 +10,7 @@ let superheroData = [
   { name: "Spiderman", phoneNum: "111-929-1231", affiliation: "Marvel", img_url:"http://vignette3.wikia.nocookie.net/marveldatabase/images/5/5f/Amazing_Spider-Man_Vol_4_1.6_Textless.jpg/revision/latest/scale-to-width-down/270?cb=20160322173450"},
   { name: "Captain America", phoneNum: "333-999-9999", affiliation: "Marvel", img_url:"http://vignette3.wikia.nocookie.net/marveldatabase/images/d/de/Captain_America_Steve_Rogers_Vol_1_1_Epting_Variant_Textless.jpg/revision/latest/scale-to-width-down/270?cb=20160215192850"},
   { name: "Batgirl", phoneNum: "322-444-3241", affiliation: "DC", img_url:"https://upload.wikimedia.org/wikipedia/en/d/df/Barbara_Gordon_Batgirl.jpg"},
-  { name: "The Flash", phoneNum: "767-865-9999", affiliation: "DC", img_url:"http://vignette4.wikia.nocookie.net/theflash/images/1/1d/Kid_Flash_Bart_Allen-1.jpg/revision/latest/scale-to-width-down/260?cb=20101014234146"},
+  { name: "The Flash", phoneNum: "767-865-9999", affiliation: "DC", img_url:"http://vignette4.wikia.nocookie.net/theflash/images/1/1d/Kid_Flash_Bart_Allen-1.jpg/revision/latest/scale-to-width-down/260?cb=20101014234146"}
 ]
 
 
@@ -21,4 +21,4 @@ angular
     function superController(){
       this.superheroes = superheroData
       }
-    }
+    
