@@ -23,9 +23,11 @@
     </label></p>
   </div>
 
+  <img ng-src="{{vm.img_url}}" alt="superhero image" />
+
   <div class="superherobox" ng-repeat="superhero in vm.superheroes | filter:searchBox">
     <h2 ng-class="{'blue':superhero.affiliation === 'Marvel','red':superhero.affiliation === 'DC'}">{{superhero.name}}</h2>
-    <img ng-src="{{superhero.img_url}}" alt="superhero image" /><button type="button" name="button">Click to Top</button>
+    <button type="button" ng-click="vm.topImage(superhero)" name="button">Click to Show</button>
     <p>Affiliation: {{superhero.affiliation}} </p>
     <p>Phone Number: {{superhero.phoneNum}}</p>
   </div>

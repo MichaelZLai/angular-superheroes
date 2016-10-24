@@ -20,5 +20,13 @@ angular
 
     function superController(){
       this.superheroes = superheroData
+      this.img_url = ""
+
+      this.topImage = function(superhero){
+        this.img_url = superhero.img_url
       }
-    
+
+
+
+
+      }
