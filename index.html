@@ -8,6 +8,7 @@
 </head>
 <body ng-controller="superCtrl as vm">
 
+<div class="topForms">
   <div class="searchForm">
     <p><label>Search Page
       <input type="text" ng-model="searchBox.$">
@@ -22,6 +23,20 @@
       <input type="text" ng-model="searchBox.affiliation">
     </label></p>
   </div>
+
+  <div class="addHeroForm">
+    <p><label>Name
+    <input type="text" ng-model="vm.newHero.name"></label></p>
+    <p><label>Phone Number
+    <input type="text" ng-model="vm.newHero.phoneNum"></label></p>
+    <p><label>Affiliation
+    <input type="text" ng-model="vm.newHero.affiliation"></label></p>
+    <p><label>Image URL
+    <input type="text" ng-model="vm.newHero.img_url"></label></p>
+    <p><button ng-click="vm.addHero()">Add a Superhero</button></p>
+  </div>
+</div>
+
 
   <img ng-src="{{vm.img_url}}" alt="superhero image" />
 

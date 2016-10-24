@@ -20,12 +20,17 @@ angular
 
     function superController(){
       this.superheroes = superheroData
-      this.img_url = ""
+      this.newHero = {}
 
       this.topImage = function(superhero){
         this.img_url = superhero.img_url
       }
 
+      this.addHero = function(){
+        let superhero = this.newHero
+        this.superheroes.push(superhero)
+        this.newHero = {}
+      }
 
 
 
